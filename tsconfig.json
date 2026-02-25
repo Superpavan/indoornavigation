@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "types": [
+      "jest"
+    ]
+  },
+  "extends": "expo/tsconfig.base"
+}

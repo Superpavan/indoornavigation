@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "IndoorNav",
+    "slug": "indoor-nav",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A1628",
+    "splash": {
+      "backgroundColor": "#0A1628"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.indoornav",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Required for indoor navigation via Bluetooth beacons",
+        "NSBluetoothPeripheralUsageDescription": "Required for indoor navigation via Bluetooth beacons"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A1628"
+      },
+      "package": "com.yourcompany.indoornav",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": []
+  }
+}
