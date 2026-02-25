@@ -1,37 +1,37 @@
+// 
 {
   "expo": {
-    "name": "IndoorNav",
-    "slug": "indoor-nav",
+    "name": "IndoorNavigationRN",
+    "slug": "indoor-navigation-rn",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "backgroundColor": "#0A1628",
+    "backgroundColor": "#1A2544",
     "splash": {
-      "backgroundColor": "#0A1628"
+      "image": "./assets/splash.png",
+      "backgroundColor": "#1A2544",
+      "resizeMode": "contain"
     },
     "assetBundlePatterns": ["**/*"],
+    "platforms": ["ios", "android", "web"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourcompany.indoornav",
-      "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "Required for indoor navigation via Bluetooth beacons",
-        "NSBluetoothPeripheralUsageDescription": "Required for indoor navigation via Bluetooth beacons"
-      }
+      "bundleIdentifier": "com.indoornavigationrn.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#0A1628"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1A2544"
       },
-      "package": "com.yourcompany.indoornav",
-      "permissions": [
-        "android.permission.BLUETOOTH",
-        "android.permission.BLUETOOTH_ADMIN",
-        "android.permission.BLUETOOTH_SCAN",
-        "android.permission.BLUETOOTH_CONNECT",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION"
-      ]
+      "package": "com.indoornavigationrn.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "themeColor": "#1A2544",
+      "backgroundColor": "#1A2544"
     },
     "plugins": []
   }

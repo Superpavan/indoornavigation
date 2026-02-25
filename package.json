@@ -1,9 +1,10 @@
 {
-  "name": "indoor-nav",
+  "name": "IndoorNavigationRN",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.js",
   "scripts": {
     "start": "expo start",
+    "start:clear": "expo start --clear",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
@@ -11,26 +12,20 @@
   "dependencies": {
     "@expo/metro-runtime": "~3.2.3",
     "@expo/vector-icons": "^14.0.2",
-    "@react-native/metro-config": "^0.84.0",
-    "@types/react": "~18.2.79",
-    "expo": "~51.0.0",
+    "expo": "~51.0.28",
     "expo-linear-gradient": "~13.0.2",
     "expo-status-bar": "~1.12.1",
-    "metro": "^0.80.12",
-    "metro-config": "^0.80.12",
-    "metro-resolver": "^0.80.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.74.1",
+    "react-native": "0.74.5",
     "react-native-reanimated": "~3.10.1",
     "react-native-svg": "15.2.0",
-    "react-native-web": "~0.19.10",
-    "resolve-from": "^5.0.0",
-    "typescript": "~5.3.3"
+    "react-native-web": "~0.19.10"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "@react-native/typescript-config": "^0.84.0"
+    "@types/react": "~18.2.45",
+    "typescript": "~5.3.3"
   },
   "private": true
 }
