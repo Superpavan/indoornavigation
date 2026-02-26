@@ -1,75 +1,159 @@
-# OSX
-#
-.DS_Store
+# ──────────────────────────────────────────────
+# .gitignore for React Native + Expo Project
+# IndoorNavigationRN — Airport Indoor Navigation
+# ──────────────────────────────────────────────
 
-# Xcode
-#
-build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
-**/.xcode.env.local
-
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
-*.iml
-*.hprof
-.cxx/
-*.keystore
-!debug.keystore
-.kotlin/
-
-# node.js
-#
+# ── Node ──────────────────────────────────────
 node_modules/
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
+# ── Expo ──────────────────────────────────────
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
 
-**/fastlane/report.xml
-**/fastlane/Preview.html
-**/fastlane/screenshots
-**/fastlane/test_output
+# ── Native builds ─────────────────────────────
+# Android
+android/
+!android/gradle.properties
 
-# Bundle artifact
-*.jsbundle
+# iOS
+ios/
+!ios/Podfile
 
-# Ruby / CocoaPods
-**/Pods/
-/vendor/bundle/
+# ── Build outputs ─────────────────────────────
+build/
+*.apk
+*.ipa
+*.aab
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
 
-# Temporary files created by Metro to check the health of the file watcher
+# ── Metro bundler cache ───────────────────────
 .metro-health-check*
+.metro/
 
-# testing
-/coverage
+# ── Environment variables ─────────────────────
+# NEVER commit .env files — they contain secrets
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env*.local
 
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# ── OS generated files ────────────────────────
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ── IDE / Editor ──────────────────────────────
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim
+*.swp
+*.swo
+Session.vim
+.netrwhist
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ── Testing ───────────────────────────────────
+coverage/
+.nyc_output/
+jest-results/
+test-results/
+
+# ── TypeScript ────────────────────────────────
+*.tsbuildinfo
+
+# ── Logs ──────────────────────────────────────
+logs/
+*.log
+lerna-debug.log*
+
+# ── Temporary files ───────────────────────────
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
+
+# ── EAS Build (Expo Application Services) ─────
+.easignore
+
+# ── Watchman ──────────────────────────────────
+.watchman-cache/
+
+# ── React Native specific ─────────────────────
+# Flipper
+ios/Pods/
+android/.gradle/
+android/app/build/
+android/build/
+
+# Hermes
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.map
+
+# ── Certificates & Secrets ────────────────────
+# These should NEVER be committed
+*.pem
+*.cert
+*.crt
+google-services.json
+GoogleService-Info.plist
