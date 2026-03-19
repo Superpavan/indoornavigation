@@ -20,7 +20,6 @@ yarn-error.log*
 .expo-shared/
 dist/
 web-build/
-expo-env.d.ts
 
 # ── Native builds ─────────────────────────────
 # Android
